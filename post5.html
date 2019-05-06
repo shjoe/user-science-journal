@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137569589-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137569589-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="User Science Journal">
+  <meta name="author" content="Shure Joe">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shure Joe</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="post1.html">Post 1</a>
+              <a class="dropdown-item" href="post2.html">Post 2</a>
+              <a class="dropdown-item" href="post3.html">Post 3</a>
+              <a class="dropdown-item" href="post4.html">Post 4</a>
+              <a class="dropdown-item" href="post5.html">Post 5</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Blogging About Design</h1>
+            <h2 class="subheading">Evaluating Accessibility
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">Shure Joe</a>
+              on May 5, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>In this week’s accessibility study, I will be looking at the <a href="https://www.ci.westport.wa.us/"
+              target="_blank">website of Westport, WA </a>. Westport is a small
+            town that is located on the coast of southwest Washington that I grew up in when I was younger. I thought it
+            would be interesting to do an accessibility study on a website that serves the general public in providing
+            information and resources, but I didn’t want to do one on a larger city like Seattle. Rather, a smaller town
+            like Westport would probably have more issues with website accessibility than a city with the ability to
+            allocate more resources to address the concerns that come up in this week’s study.</p>
+          <img class="img-fluid" src="img/post5/home.jpg" alt="Westport, WA Homepage">
+          <span class="caption text-muted">Looks like what you would expect from a small town website.</span>
+          <p>In order to help me find and analyze this website, I used the <a href="http://wave.webaim.org/"
+              target="_blank"> Web Accessibility Evaluation Tool (WAVE)</a>
+            and
+            <a href="https://developers.google.com/web/tools/lighthouse/#devtools" target="_blank"> Chrome’s Lighthouse
+              tool</a> to run audits and cross referenced them with the <a
+              href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/" target="_blank"> Web Content Accessibility
+              Guidelines (WCAG) 2.1</a>. I found that the website for Westport, WA has some glaring issues regarding
+            content.
+            I found that 1) the HTML lacked any type of structure through the lack of headings and 2) images, some
+            links, and forms lacked alternative text. These issues could severely impact the way a screen reader
+            presents this information to a user.</p>
+          <h2>Headings</h2>
+          <p>One of the things that stuck out the most when I ran WAVE and Lighthouse was the lack of structure,
+            specifically there are no headings. I can understand that if you’re not using any kind of assisted
+            screen reader, it would be easy to dismiss the lack of headings in the HTML structure. Having studied
+            web development for a few quarters, I know that headings (e.g. h1, h2, h3, etc.) provide structure to a
+            web page.</p>
+          <p>Headings provides a hierarchy to sections of a page which is a crucial component of delivering
+            information, not just stylistically but also in a reasonable manner. In the case of assisted technology,
+            it helps the user navigate through the content of the page. In this website that would be near
+            impossible due to the structure of the HTML file. Most of the content is written in the table tag and
+            upon further review in Chrome’s dev tools, it’s a hot mess trying to find any kind of structure.</p>
+          <p>I’ve gone through a few of the pages and links and have yet to find any p tags. All the text is
+            rendered through tables, lists, or link tags. I can’t imagine how a screen reader would interpret this
+            page.</p>
+          <img class="img-fluid" src="img/post5/html.jpg" alt="HTML File">
+          <span class="caption text-muted">What is going on in this HTML file?</span>
+          <h2>Alternative Text</h2>
+          <p>On the home page, there are six images that do not have alt tags to provide a short description. This
+            is also the case with a form tag and a few links. This may seem not seem like a big deal the browser
+            will be unable to relay what the content of these things are due to a lack of text descriptions. While
+            non-text content is visually presented to most users, it provides a huge road block to those that
+            visually impaired. Alternative text is a means to remedy this issue.</p>
+          <img class="img-fluid" src="img/post5/alternative-text.jpg" alt="Lack of Alternative Text">
+          <span class="caption text-muted">Top: Example of an image lacking alternative text. Bottom: Lighthouse audit
+            listing all instances of a lack of alternative text.</span>
+          <p>There are a decent amount of important links, some that are linked by an image, that lack alternative text.
+            For instance, Tsunami preparedness and info was always a big subject when I was living in Westport and it
+            would be hard for a screen reader to be able to convey that an image links to important information. The
+            user would have to use contextual clues to “guess” that the image linked to information related to Tsunamis
+            due to being in a table that included Tsunami in the description. This is bad design, users shouldn’t have
+            to guess where a link is going to take them.</p>
+          <h2>Conclusion</h2>
+          <p>While I only focused on two accessibility issues on this website their impact goes beyond. The lack of
+            structure and alternative text descriptions impacts a user’s ability to perceive, operate, and understand a
+            website. When I decided to comb through the HTML file, I was overwhelmed by what was being presented to me.
+            I couldn’t help but think that the website should have been set up into different portions such as headings,
+            navigation sections, and footers. I noticed that styling was also intermixed with the HTML which also
+            impacted my ability to read and make sense of the HTML structure. If a machine is going to comb through what
+            I just read and spit that back out to the user, the website would come off as off-putting. The website,
+            while visually dated, is something that the average user can navigate through but if someone where to rely
+            on assistive technology, it would be something else.</p>
+          <p>
+            My recommendation is to add some type of structure to the HTML and add alternative texts to all links and
+            images. The content of the actual page should be marked up with headings as well to denote a hierarchy
+            within the page. I think it would help if the HTML file was sectioned in a way that the right and left
+            navigation where separated as their own divs and the main content was marked up with headers. The tables are
+            unnecessary and add to the confusion of the HTML file. By cleaning up the HTML, it will be a lot clearer for
+            screen readers to read and present to users.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Shure Joe 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
