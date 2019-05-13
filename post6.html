@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137569589-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137569589-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="User Science Journal">
+  <meta name="author" content="Shure Joe">
+
+  <title>User Science Journal: Make this Blog Accessible</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shure Joe</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="post1.html">Analysis for Usability</a>
+              <a class="dropdown-item" href="post2.html">Usable Design Analysis</a>
+              <a class="dropdown-item" href="post3.html">Usability Test</a>
+              <a class="dropdown-item" href="post4.html">Mobile Usability Test</a>
+              <a class="dropdown-item" href="post5.html">Evaluating Accessibility</a>
+              <a class="dropdown-item" href="post6.html">Make this Blog Accessible</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Blogging About Design</h1>
+            <h2 class="subheading">Make this Blog Accessible
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">Shure Joe</a>
+              on May 12, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>In order to make sure that this blog adheres to accesibility principles, I used <a
+              href="http://wave.webaim.org/" target="_blank"> Web Accessibility Evaluation Tool (WAVE)</a>
+            and
+            <a href="https://developers.google.com/web/tools/lighthouse/#devtools" target="_blank"> Chrome’s Lighthouse
+              tool</a> to analyze this blog. Upon running these audits, I noticed a few red flags as well as some other
+            smaller issues.</p>
+          <img class="img-fluid" src="img/post6/before-wave.jpg" alt="Initial WAVE Report">
+          <span class="caption text-muted">Note that WAVE detected several different issues.</span>
+          <img class="img-fluid" src="img/post6/before-lighthouse.jpg" alt="Initial Lighthouse Audit">
+          <span class="caption text-muted">Lighthouse only picked up one error but still suggests that I manually check
+            for others.</span>
+          <h2>First Steps: Fix the Biggest Error</h2>
+          <p>My gut reaction was to fix the errors listed in red which point to <a
+              href="https://webaim.org/standards/wcag/checklist#sc2.4.4" target="_blank"> WebAIM standard 2.4.4</a>
+            which indicates that links should have some sort of indication as to what they are. My error was a result of
+            empty social links in my footer as seen by the code below:</p>
+          <img class="img-fluid" src="img/post6/before-social.jpg" alt="Social Links - Error">
+          <span class="caption text-muted">The footer contained empty links.</span>
+          <p>It makes no sense to have empty links on a web page (it actually makes it more confusing for automated
+            readers) so I can either get rid of that code snippet or add
+            links. In order to fix this, I trimmed down the list and only kept the link to Github. I ran the
+            report/audit
+            again to see if this would remedy the error but there was no change. After <a
+              href="https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse" target="_blank"> some
+              research</a>, I found that I needed to add and "aria-label" within my "a-tag". After appending the code,
+            the code passed the audit.</p>
+          <img class="img-fluid" src="img/post6/after-social.jpg" alt="Social Links - Fix">
+          <span class="caption text-muted">Not only does the code look neater because I removed unnecessary lines, It
+            conforms to accessibility!</span>
+          <h2>Second Step: Fix a Non-Reported Error</h2>
+          <p>The dropdown menu for blog posts, while technically having descriptive text, lacks any information
+            regarding the posts.</p>
+          <img class="img-fluid" src="img/post6/before-dropdown.jpg" alt="A very uninformative dropdown menu">
+          <span class="caption text-muted">This dropdown only lists Post 1, Post 2, etc.</span>
+          <img class="img-fluid" src="img/post6/before-dropdown-html.jpg" alt="Dropdown HTML - Before">
+          <span class="caption text-muted">The HTML, while correct, could use some help.</span>
+          <p>This is actually a very simple fix. All I needed to do was add the title of the blog post to the
+            corresponding link. This change may be small but it will make a tremendous impact when screen readers need
+            to comb through HTML in order to make sense of the navigation of the page. Like most of the changes to this
+            blog, once you've done it on one page, you can just
+            copy and paste into the rest as needed.</p>
+          <img class="img-fluid" src="img/post6/after-dropdown.jpg" alt="A very informative dropdown menu">
+          <span class="caption text-muted">This dropdown now includes more informative link names.</span>
+          <img class="img-fluid" src="img/post6/after-dropdown-html.jpg" alt="Dropdown HTML - After">
+          <span class="caption text-muted">Small tweaks can make a huge impact in navigation.</span>
+          <h2>Third Step: Run more Reports and Audits!</h2>
+         
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://github.com/shjoe" aria-label="Link to my Github page">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Shure Joe 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
