@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137569589-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137569589-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="User Science Journal">
+  <meta name="author" content="Shure Joe">
+
+  <title>User Science Journal: Adding Analytics</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shure Joe</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="post1.html">Analysis for Usability</a>
+              <a class="dropdown-item" href="post2.html">Usable Design Analysis</a>
+              <a class="dropdown-item" href="post3.html">Usability Test</a>
+              <a class="dropdown-item" href="post4.html">Mobile Usability Test</a>
+              <a class="dropdown-item" href="post5.html">Evaluating Accessibility</a>
+              <a class="dropdown-item" href="post6.html">Make this Blog Accessible</a>
+              <a class="dropdown-item" href="post7.html">Adding Analytics</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Blogging About Design</h1>
+            <h2 class="subheading">Adding Analytics
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">Shure Joe</a>
+              on May 19, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2>Intro</h2>
+          <p>In order to acclimate myself to <a href="https://analytics.google.com/analytics/web/"
+              target="_blank">Google Analytics</a>, I’ve decided to track data on this user science journal. Google
+            Analytics is a powerful tool that allows us as developers to track key metrics regarding website traffic and
+            user information. We are then able to leverage that data to either make impactful decisions to our website
+            or other business-related choices. I specifically chose this user science journal for this analytics
+            research topic because it is a multi-page website that should in theory have a steady flow of traffic as it
+            is shared in our class.</p>
+          <h2>Set Up</h2>
+          <p>In order to track analytics on this user science journal, I followed the instructions detailed in this
+            <a href=" https://support.google.com/analytics/answer/1008080" target="_blank">page</a>. Basically, as soon
+            as you are finished signing up for Google Analytics as well as registering your chosen site, you are given a
+            pre-made script that should be inserted after the “head” tag in (all) your HTML pages. Since I started this
+            journal in early April 2019, Google Analytics have collected a little over a month and half of data.</p>
+          <p>In order to stack up my knowledge of my user base for my user science journal I will be making the
+            following assumptions:
+            <ul>
+              <li> All of the users who visit my page are from Washington State.</li>
+              <li>75% of page visitors came from a referral through <a href=" https://seattleu.instructure.com/"
+                  target="_blank">Seattle University’s Canvas portal</a>.</li>
+              <li>The overall bounce rate for this website is around 50 percent given that user’s will only be
+                interested
+                in the current week’s topic and referrals would link a specific post.</li>
+              <li>The average time on page will be less than 30 seconds (I don’t expect most visitors to stay long
+                enough
+                to read
+                the entire article.</li>
+            </ul>
+          </p>
+          <h2>Test 1: Where Are My Visitors From?</h2>
+          <p>I was almost correct in my assumption that all my traffic came from people who reside in the state
+            of
+            Washington. Washington State accounted for 26 of 35 users, claiming 72.22% of my user base as well
+            as 88.76%
+            of all sessions. What is peculiar to me is that Iowa, Pennsylvania, and Texas, and even the District
+            of
+            Columbia accounted for one user each. Even more peculiar is that Virginia amounts to 16.67% of my
+            user base
+            and 6.74% of all sessions.</p>
+          <p>As far as I know, the awareness out there regarding my journal is limited to Seattle University’s
+            WATS
+            program which is comprised of Washington State residents in the Seattle area as well as surrounding
+            cities.
+            I’m not sure how to explain these instances of users outside of Washington State other than someone
+            was able
+            to find the direct link through my through <a href="https://github.com/shjoe" target="_blank">my
+              Github
+              page</a> or a classmate happened to be browsing my journal while out of state. In the end my
+            initial
+            assumption while almost true, was ultimately wrong. Perhaps this says more about how things can be
+            seen from
+            anywhere in the world.</p>
+          <img class="img-fluid" src="img/post7/user-regions.jpg" alt="Report on User Regions">
+          <span class="caption text-muted">Lots of users from Washington State but why are there users from
+            Virginia,
+            D.C., Iowa, Pennsylvania, and Texas looking at my journal?</span>
+          <h2>Test 2: How Did People Get Here?</h2>
+          <p>Almost the inverse of my assumption is true here. I had guessed that 75% of users would come
+            through Canvas but it turns out that 64.3% of users (27) come from direct as opposed to the
+            35.7% (15) of users who clicked on a link to get to my page. It turns out my referrals came
+            through Canvas and my Github page. Almost half of the direct views came from the <a
+              href="https://www.shurenotjoe.com/user-science-journal/index.html" target="_blank"> index
+              page</a>. I have to assume here that people either referred to my page in their address bar
+            and was able to navigate to my page through the browser remembering my page URL or clicking a
+            link to my page that was provided through email as Canvas also creates an email notification
+            that contains the same message. So far, Google Analytics is showing me that my perceptions are
+            incorrect.</p>
+          <img class="img-fluid" src="img/post7/acquisition.jpg" alt="Report on Acquisitions via direct and
+                      referral">
+          <span class="caption text-muted">The split is almost 2/3 in favor of direct and 1/3 in favor of
+            referral</span>
+          <h2>Test 3 & 4: Bounce Rates and Average Time on Page</h2>
+          <p>Finally got one! It makes sense for this page to have a bounce rate of almost half. At 49.44%, it puts me
+            in line with my initial assumption. As our class has weekly topics that are brought forth through weekly
+            journal entries, I don’t expect most of the users to refer to previous entries and if they do, it’s most
+            likely that they started on the index and navigated to the topic of the week. Although, developers typically
+            want a low bounce rate, I’m happy with my bounce rate. It tells me that half of the sessions include at
+            least one interaction on a small scale website.</p>
+          <img class="img-fluid" src="img/post7/bounce-time.jpg" alt="Report on Bounce Rate and Average Time on Page">
+          <span class="caption text-muted">Bounce Rate: 49.44% & Average Time on Page: 1 minute and 33 seconds</span>
+          <p>I figured that most people who would read my article would skim through it leading to a low average of 30
+            seconds (this is being generous). It turns out that users on average spend 1 minute and 33 seconds. My
+            lowball guess was due in part of the content as they are not full on research papers by no means. I would
+            classify my weekly posts as a short and sweet introduction into that week’s topic. I even timed myself
+            reading through <a href="https://www.shurenotjoe.com/user-science-journal/post6.html" target="_blank"> Post
+              6</a> and I clocked in just shy of under 30 seconds. It turns out people are digesting
+            my musings more than I give them credit for. Thanks guys!</p>
+          <h2>Conclusion</h2>
+          <p>There are a lot of metrics to unpack in Google Analytics, but this brief review of my own website gave me a
+            lot of perspective of who is visiting my page and what they are doing. I may not have assumed correctly, in
+            fact only one of my assumption were correct, but I now know that:
+            <ul>
+              <li>While most of the users come from Washington State, I still have a few outliers out there in other
+                states/territories.</li>
+              <li>A lot of my traffic is direct, there is a good chance that users refer to my websites from their
+                browsers remembering my URL.</li>
+              <li>My bounce rate is 50/50, I would consider this a success or passing metric.</li>
+              <li>Users are spending more time on my website than I would my own.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://github.com/shjoe" aria-label="Link to my Github page" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Shure Joe 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
