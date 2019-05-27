@@ -17,10 +17,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="User Science Journal>
-  <meta name=" author" content="Shure Joe">
+  <meta name="description" content="User Science Journal">
+  <meta name="author" content="Shure Joe">
 
-  <title>User Science Journal: Home</title>
+  <title>User Science Journal: Goal</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
@@ -33,26 +33,7 @@
   <link
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
-
-  <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -70,11 +51,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li> -->
-
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -99,57 +75,80 @@
     </div>
   </nav>
 
+
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/abstract-art.jpg')">
+  <header class="masthead" style="background-image: url('img/brainstorming.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading">
-            <h1>User Science Journal</h1>
-            <span class="subheading">Reflections on Accessbility and Analytics</span>
+          <div class="post-heading">
+            <h1>Blogging About Design</h1>
+            <h2 class="subheading">Goal
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">Shure Joe</a>
+              on May 26, 2019</span>
           </div>
-
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-12">
-        <div class="list-group">
-          <a href="https://www.usability.gov/what-and-why/accessibility.html" class="list-group-item" target="_blank"
-            onclick="gtag('event', 'Click', {
-            'event_category': 'Link',
-            'event_label': 'usability.gov',
-            'value': 1
-          })">Learn about Accessbility</a>
-
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2>Intro</h2>
+          <p>I thought long and hard about what goal I would create in order to test <a
+              href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics'</a> features.
+            This entire quarter was dedicated to aspects of web usability and understanding on a personal level how our
+            decisions as developers have repercussions whether we are aware of it or not. For this reason, I want to
+            spread more awareness on usability concepts and incorporate this goal into Google Analytics.</p>
+          <h2>Goal</h2>
+          <p>The conditions of my goal are very simple. In order for Google to register a goal
+            conversion or successful event, a user would have to click on the link that will take them to <a
+              href="https://www.usability.gov/what-and-why/accessibility.html" target="_blank">an article from
+              Usability.gov</a>. This link will initially be located in the <a href="index.html" target="_blank">index
+              page</a>. I will come back to modifying the event/goal after collecting a week's worth of data. Should my
+            conversions be low relative to the amount of traffic my journal receives, changes will probably be needed.
+          </p>
+          <h2>Set Up</h2>
+          <p>I followed the instructions detailed in this
+            <a href="https://webris.org/creating-goals-out-of-events-in-google-analytics/" target="_blank">article</a>
+            in order to set up my event driven goal. Google has premade templates available but, in this case, I needed
+            to create a custom event. However, the process is painless and resources on the subject plenty.</p>
+          <img class="img-fluid" src="img/post8/goal-setup.jpg" alt="Setting up goals in Google Analytics">
+          <span class="caption text-muted">In order to set up my goal, I had to define the following: category, action,
+            label, and value.</span>
+          <p>As you can see from the above and below images, it is simple to set up an event and tracking. The
+            tracking code follows the same values inputted into the Google Analytics dashboard. Once the tag is
+            completed, all I had to do was insert it into the HTML block of code that included my link to the Usability
+            article.
+          </p>
+          <img class="img-fluid" src="img/post8/goal-html.jpg" alt="Google Tag inserted into HTML">
+          <span class="caption text-muted">To allow Google to track goal conversions, the following tag needed to be
+            inserted into my HTML file.</span>
+          <h2>Funnel</h2>
+          <p>The funnel will live and die by the index page. Users must navigate to that specific page and click on the
+            link. So, no matter where the user is located on my journal, the index will have to be located. I wanted to
+            try a narrow funnel for this first week of collecting data to see the difference between narrow and open
+            funnels.</p>
+          <img class="img-fluid" src="img/post8/goal-index.jpg" alt="Index page with goal">
+          <span class="caption text-muted">When a user clicks on the 'Learn about Accessibility' link, Google will
+            register a conversion.</span>
+          <h2>Conclusion</h2>
+          <p>At the moment, I've pigeonholed myself into a corner when it comes to how a user can complete my task. The
+            conditions to complete my goal is narrow and there is also not much happening on my page to draw attention
+            to it as well. Although, I'm hoping that this post will create more awareness of the
+            goal, I will need to revisit how I want to approach the goal.</p>
         </div>
-      </div>
-
-      <div class="col-lg-8 col-md-12 mx-auto">
-        <div class="post-preview">
-          <a href="post8.html">
-            <h2 class="post-title">
-              Blogging about Design
-            </h2>
-            <h3 class="post-subtitle">
-              Goal
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Shure Joe</a>
-            on May 26, 2019</p>
-        </div>
-        <hr>
-
       </div>
     </div>
-  </div>
+  </article>
 
+  <hr>
 
   <!-- Footer -->
   <footer>
@@ -183,9 +182,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+
 </body>
 
 </html>
