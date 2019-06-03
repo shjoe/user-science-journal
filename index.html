@@ -14,22 +14,6 @@
 
     gtag('config', 'UA-137569589-1');
   </script>
-  <script>
-    /**
-    * Function that registers a click on an outbound link in Analytics.
-    * This function takes a valid URL string as an argument, and uses that URL string
-    * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-    * using 'navigator.sendBeacon' in browser that support it.
-    */
-    var getOutboundLink = function(url) {
-      gtag('event', 'click', {
-        'event_category': 'outbound',
-        'event_label': url,
-        'transport_type': 'beacon',
-        'event_callback': function(){document.location = url;}
-      });
-    }
-    </script>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -105,6 +89,8 @@
               <a class="dropdown-item" href="post6.html">Make this Blog Accessible</a>
               <a class="dropdown-item" href="post7.html">Adding Analytics</a>
               <a class="dropdown-item" href="post8.html">Goal</a>
+              <a class="dropdown-item" href="post9.html">Content Experiments</a>
+              <a class="dropdown-item" href="resources.html">Resources</a>
             </div>
           </li>
           <li class="nav-item">
@@ -136,15 +122,29 @@
     <div class="row">
       <div class="col-lg-4 col-md-12">
         <div class="list-group">
-          <a href="https://www.usability.gov/what-and-why/accessibility.html" onclick="getOutboundLink('https://www.usability.gov/what-and-why/accessibility.html'); return false;" class="list-group-item" target="_blank">Learn about Accessibility</a>
+          <a href="/resources.html" class="list-group-item">Resources</a>
         </div>
       </div>
 
       <div class="col-lg-8 col-md-12 mx-auto">
         <div class="post-preview">
+          <a href="post9.html">
+            <h2 class="post-title">
+              Week 9:
+            </h2>
+            <h3 class="post-subtitle">
+              Content Experiments
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on June 2, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
           <a href="post8.html">
             <h2 class="post-title">
-              Blogging about Design
+              Week 8:
             </h2>
             <h3 class="post-subtitle">
               Goal
@@ -155,7 +155,104 @@
             on May 26, 2019</p>
         </div>
         <hr>
-
+        <div class="post-preview">
+          <a href="post7.html">
+            <h2 class="post-title">
+              Week 7:
+            </h2>
+            <h3 class="post-subtitle">
+              Adding Analytics
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on May 19, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post6.html">
+            <h2 class="post-title">
+              Week 6:
+            </h2>
+            <h3 class="post-subtitle">
+              Make this Blog Accessible
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on May 12, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post5.html">
+            <h2 class="post-title">
+              Week 5:
+            </h2>
+            <h3 class="post-subtitle">
+              Evaluating Accessibility
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on May 5, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post4.html">
+            <h2 class="post-title">
+              Week 4:
+            </h2>
+            <h3 class="post-subtitle">
+              Mobile Usability Test
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on April 28, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post3.html">
+            <h2 class="post-title">
+              Week 3:
+            </h2>
+            <h3 class="post-subtitle">
+              Usability Test
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on April 21, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post2.html">
+            <h2 class="post-title">
+              Week 2:
+            </h2>
+            <h3 class="post-subtitle">
+              Usable Design Analysis
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on April 14, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post1.html">
+            <h2 class="post-title">
+              Week 1:
+            </h2>
+            <h3 class="post-subtitle">
+              Analysis for Usability
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Shure Joe</a>
+            on April 7, 2019</p>
+        </div>
+        <hr>
       </div>
     </div>
   </div>
