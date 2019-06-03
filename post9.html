@@ -105,48 +105,35 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <h2>Intro</h2>
-          <p>I thought long and hard about what goal I would create in order to test <a
-              href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics'</a> features.
-            This entire quarter was dedicated to aspects of web usability and understanding on a personal level how our
-            decisions as developers have repercussions whether we are aware of it or not. For this reason, I want to
-            spread more awareness on usability concepts and incorporate this goal into Google Analytics.</p>
-          <h2>Goal</h2>
-          <p>The conditions of my goal are very simple. In order for Google to register a goal
-            conversion or successful event, a user would have to click on the link that will take them to <a
-              href="https://www.usability.gov/what-and-why/accessibility.html" target="_blank">an article from
-              Usability.gov</a>. This link will initially be located in the <a href="index.html" target="_blank">index
-              page</a>. I will come back to modifying the event/goal after collecting a week's worth of data. Should my
-            conversions be low relative to the amount of traffic my journal receives, changes will probably be needed.
-          </p>
+          <p>In order to set up A/B testing, I had to find and locate any reasons why my goals in <a href="post8.html"
+              target="_blank">post 8</a> were not being met. At quick glance, it's easy to conclude that
+            the "call to action" blends in too much with the rest of the page. There is really nothing drawing its
+            attention. I've even been told by a few friends and family that they've clicked around, read a post or two,
+            but they ignored the call to action link because they didn't think it was important. I was even told "it's
+            not even in bold font."</p>
+          <img class="img-fluid" src="img/post9/goal-original.JPG" alt="Home page with goal">
+          <span class="caption text-muted">Not the most eye-catching call to action.</span>
           <h2>Set Up</h2>
-          <p>I followed the instructions detailed in this
-            <a href="https://webris.org/creating-goals-out-of-events-in-google-analytics/" target="_blank">article</a>
-            in order to set up my event driven goal. Google has premade templates available but, in this case, I needed
-            to create a custom event. However, the process is painless and resources on the subject plenty.</p>
-          <img class="img-fluid" src="img/post8/goal-setup.jpg" alt="Setting up goals in Google Analytics">
-          <span class="caption text-muted">In order to set up my goal, I had to define the following: category, action,
-            label, and value.</span>
-          <p>As you can see from the above and below images, it is simple to set up an event and tracking. The
-            tracking code follows the same values inputted into the Google Analytics dashboard. Once the tag is
-            completed, all I had to do was insert it into the HTML block of code that included my link to the Usability
-            article.
-          </p>
-          <img class="img-fluid" src="img/post8/goal-html.jpg" alt="Google Tag inserted into HTML">
-          <span class="caption text-muted">To allow Google to track goal conversions, the following tag needed to be
-            inserted into my HTML file.</span>
-          <h2>Funnel</h2>
-          <p>The funnel will live and die by the index page. Users must navigate to that specific page and click on the
-            link. So, no matter where the user is located on my journal, the index will have to be located. I wanted to
-            try a narrow funnel for this first week of collecting data to see the difference between narrow and open
-            funnels.</p>
-          <img class="img-fluid" src="img/post8/goal-index.jpg" alt="Index page with goal">
-          <span class="caption text-muted">When a user clicks on the 'Learn about Accessibility' link, Google will
-            register a conversion.</span>
+          <p>I'm using <a href="https://optimize.google.com/" target="_blank">Google Optimize</a> in order to set up my
+            A/B testing. Specifically, I want to modify the call to action in order to get more clicks thus resulting in
+            more goal conversions. My "original" will be the default page while the variant will look like:</p>
+          <img class="img-fluid" src="img/post9/goal-variant.jpg" alt="Variant page with styled link">
+          <span class="caption text-muted">The link is styled as white text with a blue background, something that
+            stands out considering how black and white the content is.</span>
+          <p>It was important to me to make it clear to users that the link is important and that is should be clicked.
+            By giving it visual hierarchy as well as more context by informing users to "Click me for Resources," I
+            should in theory increase goal conversion rates.</p>
+          <h2>Considerations</h2>
+          <p>It will be very interesting to see how this experiment pans out. From the data that Google Analytics has
+            retrieved since this page was first published, the general page flow from typical user activity is short.
+            Users will generally exit after a page or two and navigation usually involves movement from the index page
+            to a specific post. My bounce and exit rates are still in line with my past analysis from <a
+              href="post7.html" target="_blank">post 7</a> which backs up my theory that there isn't too much movement
+            on my page. Hopefully the changes on the variant will remedy this.</p>
           <h2>Conclusion</h2>
-          <p>At the moment, I've pigeonholed myself into a corner when it comes to how a user can complete my task. The
-            conditions to complete my goal is narrow and there is also not much happening on my page to draw attention
-            to it as well. Although, I'm hoping that this post will create more awareness of the
-            goal, I will need to revisit how I want to approach the goal.</p>
+          <p>I'll revisit this post in a few days once I've collected more data from friends and family. My gut feeling
+            is that the variant will return more hits than the original page by a significant margin. Setting up
+            experiments through Optimize was easy and I'm excited to see the results.</p>
         </div>
       </div>
     </div>
@@ -178,13 +165,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
