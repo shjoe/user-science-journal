@@ -122,7 +122,11 @@
     <div class="row">
       <div class="col-lg-4 col-md-12">
         <div class="list-group">
-          <a href="resources.html" class="list-group-item">Resources</a>
+          <a href="resources.html" class="list-group-item" onclick="gtag('event', 'aaa', {
+            'event_category' : 'bbb',
+            'event_label' : 'ccc',
+            'value': 150
+          })">Resources</a>
         </div>
       </div>
 
