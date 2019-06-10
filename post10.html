@@ -22,7 +22,7 @@
   <meta name="description" content="User Science Journal">
   <meta name="author" content="Shure Joe">
 
-  <title>User Science Journal: Content Experiements</title>
+  <title>User Science Journal: Experiment Report</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
@@ -89,11 +89,11 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
             <h1>Blogging About Design</h1>
-            <h2 class="subheading">Content Experiments
+            <h2 class="subheading">Experiement Report
             </h2>
             <span class="meta">Posted by
               <a href="#">Shure Joe</a>
-              on June 2, 2019</span>
+              on June 9, 2019</span>
           </div>
         </div>
       </div>
@@ -105,36 +105,37 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <h2>Intro</h2>
-          <p>In order to set up A/B testing, I had to find and locate any reasons why my goals in <a href="post8.html"
-              target="_blank">post 8</a> were not being met. At quick glance, it's easy to conclude that
-            the "call to action" blends in too much with the rest of the page. There is really nothing drawing its
-            attention. I've even been told by a few friends and family that they've clicked around, read a post or two,
-            but they ignored the call to action link because they didn't think it was important. I was even told "it's
-            not even in bold font."</p>
-          <img class="img-fluid" src="img/post9/goal-original.JPG" alt="Home page with goal">
-          <span class="caption text-muted">Not the most eye-catching call to action.</span>
-          <h2>Set Up</h2>
-          <p>I'm using <a href="https://optimize.google.com/" target="_blank">Google Optimize</a> in order to set up my
-            A/B testing. Specifically, I want to modify the call to action in order to get more clicks thus resulting in
-            more goal conversions. My "original" will be the default page while the variant will look like:</p>
-          <img class="img-fluid" src="img/post9/goal-variant.jpg" alt="Variant page with styled link">
-          <span class="caption text-muted">The link is styled as white text with a blue background, something that
-            stands out considering how black and white the content is.</span>
-          <p>It was important to me to make it clear to users that the link is important and that is should be clicked.
-            By giving it visual hierarchy as well as more context by informing users to "Click me for Resources," I
-            should in theory increase goal conversion rates.</p>
-          <h2>Considerations</h2>
-          <p>It will be very interesting to see how this experiment pans out. From the data that Google Analytics has
-            retrieved since this page was first published, the general page flow from typical user activity is short.
-            Users will generally exit after a page or two and navigation usually involves movement from the index page
-            to a specific post. My bounce and exit rates are still in line with my past analysis from <a
-              href="post7.html" target="_blank">post 7</a> which backs up my theory that there isn't too much movement
-            on my page. Hopefully the changes on the variant will remedy this.</p>
+          <h2>Intro & Set Up</h2>
+          <p>In continuation of <a href="post9.html" target="_blank">last week’s AB testing setup </a>, I now have a
+            week’s worth of data to analyze and interpret. To briefly review, I wanted to test how many conversions, or
+            clicks on a certain link on the home page, that the original and variants can gather. I hypothesized that
+            the variant would outperform the original by a large margin. Setting up this AB testing was simple and
+            involved <a href="post8.html" target="_blank"> setting up a goal in Google Analytics</a> and importing it
+            into Optimize. From there, I needed to define the length of time the testing would take, create a variant
+            page with changes (in my case, simple changes to text and color).</p>
+          <h2>Analysis</h2>
+          <p>By implementing this AB testing I hoped to prove that a simple stylistic change can make all the difference
+            in driving or funneling traffic. After a week of running this test the results showed that:</p>
+          <img class="img-fluid" src="img/post10/results.jpg" alt="AB Testing Results">
+          <span class="caption text-muted">The conversion rates are: Original - 22.22% & Variant 1 - 47.5%</span>
+          <p>As you can see from the above, variant 1 has double the conversion percentage compared to the original.
+            What is curious is that even though I set up the weight for each version of the page at 50/50, variant 1 had
+            40 sessions compared to the original’s 9. This is something I would have to investigate for future testing
+            but as it stands, the proposed changes make all the difference.</p>
+          <p>I would point out that my overall conversion
+            rate is lower than the initial conversion rate of 75% back in week 7 when the goal was initially set up but
+            that is mostly unreliable data as the people I sent links to were tipped off on what to do. In my eyes,
+            particularly for this page which isn’t set up for user interaction, anything close to 50% is a success.</p>
           <h2>Conclusion</h2>
-          <p>I'll revisit this post in a few days once I've collected more data from friends and family. My gut feeling
-            is that the variant will return more hits than the original page by a significant margin. Setting up
-            experiments through Optimize was easy and I'm excited to see the results.</p>
+          <p>If this were any other type of site that involved some type of commerce or marketing, I would absolutely
+            implement this proposed change. I would also investigate how to improve that conversion rate to surpass 50%
+            from the index.</p>
+          <p>It might also be in my best interest to make that link/goal a constant amongst all the pages. For this
+            goal,
+            there really is no need for a funnel as it links to several resources. If anything, my next Analytics’ goal
+            should gather information on how many times a user ends up on the resource page no matter where on the page
+            they are (the link is incorporated into the menu). A/B testing should test to see what changes could improve
+            conversions from the menu.</p>
         </div>
       </div>
     </div>
@@ -166,13 +167,13 @@
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
